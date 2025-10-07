@@ -24,3 +24,5 @@ Everything that follows (engine, broker, portfolio, strategy) will consume this 
 - Dependencies:
   ```bash
   pip install pandas
+  pip install yfinance
+  pip install cctx

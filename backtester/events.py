@@ -1,5 +1,3 @@
-import pandas as pd 
-import yfinance as yf
 from dataclasses import dataclass
 
 @dataclass
@@ -19,17 +17,11 @@ class OrderEvent:
     order_type : str
     quantity : int
     direction : str
-    
+
 @dataclass
-class fillEvent:
+class FillEvent:
     symbol: str
     quantity : int
     direction : str
     fill_cost : float
     time : str
-
-
-df = pd.read_csv('data/AAPL_1d.csv')
-
-print(df.head()) 
-print("\nColumns:", df.columns.tolist())
